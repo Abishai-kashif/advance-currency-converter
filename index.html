@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- container of currency converter -->
+    <div class="container">
+      <h1>Currency Converter</h1>
+
+      <!-- form for currency converter -->
+      <form class="form">
+        <!-- taking amount from user -->
+        <div class="amount">
+          <p>Enter Amount</p>
+          <input value="1" type="text" />
+        </div>
+
+        <!-- Making drop down for & to -->
+        <div class="dropdowns">
+          <!-- drop down for from currency -->
+          <div class="dropdown">
+            <p>From</p>
+
+            <div class="selectContainer">
+              <!-- img for from currency -->
+              <img src="https://flagsapi.com/US/flat/64.png" id="imgFrom" />
+
+              <!-- select tag & options -->
+              <select id="from-currency"></select>
+            </div>
+          </div>
+
+          <i class="fa-solid fa-arrow-right-arrow-left"></i>
+
+          <!-- drop down for to currency -->
+          <div class="dropdown">
+            <p>To</p>
+
+            <div class="selectContainer">
+              <!-- img for to currency -->
+              <img src="https://flagsapi.com/PK/flat/64.png" id="imgTo" />
+
+              <!-- select tag & options -->
+              <select id="to-currency"></select>
+            </div>
+          </div>
+        </div>
+
+        <!-- result of conversion -->
+        <p id="result">1 USD = 277.00 PKR</p>
+
+        <!-- button for conversion -->
+        <button id="btn">Get Exchange Rate</button>
+      </form>
+    </div>
+    <!-- Update the src attributes -->
+    <script src="script.js"></script>
+    <!-- <script type="module" src="country.js"></script> -->
+  </body>
+</html>

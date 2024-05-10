@@ -1,0 +1,99 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FFB1B1;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #FFEAE3;
+    padding: 2rem;
+    border-radius: 1rem;
+    min-height: 45vh;
+    width: 30vw;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    margin: 2rem 0 1rem 0;
+}
+
+form select,
+input,
+button {
+    width: 100%;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+}
+
+form input {
+    height: 2.5rem;
+    font-size: 1.2rem;
+}
+
+.dropdowns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    margin-top: 1.2rem;
+}
+
+
+.dropdowns img {
+    max-width: 2rem;
+}
+
+.selectContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+    min-height: 1.2rem;
+}
+
+.selectContainer #to-currency ,
+#from-currency ,form input{
+    background-color: #FFEAE3;
+}
+
+.selectContainer select {
+    font-size: 1rem;
+    width: auto;
+}
+
+i {
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+}
+
+form .selectContainer ,
+form input {
+    border: 2px solid #FFCBCB;
+}
+
+#result {
+    margin: 2rem 0 2rem 0;
+    font-size: 1.4rem;
+}
+
+#btn {
+    height: 3rem;
+    font-size: 1.2rem;
+    background-color: #121481;
+    color: #FFEAE3;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0.5rem 0 0.5rem 0;
+}
